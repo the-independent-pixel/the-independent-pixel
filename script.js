@@ -209,13 +209,14 @@
 
     try {
       const response = await fetch(action, {
-        method,
+        method: method,
         body: new FormData(form),
         headers: {
           Accept: "application/json"
         }
       });
 
+      const sentData = await response.text();
       console.log(response);
 
       if (!response.ok) {
