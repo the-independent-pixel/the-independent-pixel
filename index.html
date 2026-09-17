@@ -1,5 +1,621 @@
-<!DOCTYPE html>
-<html>
-<head><title>Il mio Sito</title></head>
-<body><h1>Ciao Mondo! Questo è il mio sito su GitHub Pages.</h1></body>
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Independent Pixel — Siti web, PWA, foto e video</title>
+  <meta
+    name="description"
+    content="The Independent Pixel crea siti web, PWA, fotografia e video per liberi professionisti e piccole aziende. Un solo interlocutore, dalla prima idea alla pubblicazione."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">
+    Salta al contenuto
+  </a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a
+        class="brand"
+        href="#top"
+        aria-label="The Independent Pixel, torna all'inizio"
+      >
+        <img
+          class="brand__logo"
+          src="logo.jpg"
+          width="1040"
+          height="1040"
+          alt=""
+        >
+
+        <span class="brand__name">
+          The Independent Pixel
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <ul class="site-nav__list">
+          <li>
+            <a href="#services">Servizi</a>
+          </li>
+          <li>
+            <a href="#independent">Perché indipendente</a>
+          </li>
+          <li>
+            <a href="#process">Metodo</a>
+          </li>
+          <li>
+            <a href="#contact">Contatti</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="button button--compact site-header__cta" href="#contact">
+        Parliamone
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section hero" id="top">
+      <div class="container">
+        <div class="content-grid hero__grid">
+          <div class="hero__content stack">
+            <p class="eyebrow">
+              Siti Web · PWA · Fotografia · Video
+            </p>
+
+            <h1 class="hero__title text-balance">
+              Un solo interlocutore.
+              <span class="hero__highlight">Tutto il digitale che ti serve.</span>
+            </h1>
+
+            <p class="hero__lead">
+              The Independent Pixel è una web agency indipendente nel senso
+              più letterale possibile: dietro c'è una sola persona.
+              Meno passaggi, una struttura più snella e un rapporto diretto
+              con chi progetta e realizza il tuo lavoro.
+            </p>
+
+            <div class="cluster hero__actions">
+              <a class="button" href="#contact">
+                Raccontami il progetto
+                <span aria-hidden="true">→</span>
+              </a>
+
+              <a class="text-link" href="#independent">
+                Scopri perché “independent”
+              </a>
+            </div>
+
+            <p class="hero__note">
+              Preventivi su misura, conversazioni comprensibili e niente
+              staffette tra reparti per cambiare un titolo.
+            </p>
+          </div>
+
+          <aside class="hero__visual" aria-label="Il concetto di The Independent Pixel">
+            <div class="pixel-art" aria-hidden="true">
+              <span class="pixel-art__cell pixel-art__cell--one"></span>
+              <span class="pixel-art__cell pixel-art__cell--two"></span>
+              <span class="pixel-art__cell pixel-art__cell--three"></span>
+              <span class="pixel-art__cell pixel-art__cell--four"></span>
+              <span class="pixel-art__cell pixel-art__cell--five"></span>
+              <span class="pixel-art__cell pixel-art__cell--six"></span>
+            </div>
+
+            <div class="hero__visual-copy">
+              <strong>Inpixel</strong>
+              <span>Rendi un sogno qualcosa di reale.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" data-theme="dark">
+      <div class="container stack">
+        <div class="section-heading content-grid">
+          <div class="section-heading__intro">
+            <p class="eyebrow">Cosa posso costruire con te</p>
+
+            <h2 class="text-balance">
+              Il digitale utile, senza il catalogo da cento voci.
+            </h2>
+          </div>
+
+          <p class="section-heading__copy">
+            Si parte da quello che serve davvero al progetto.
+            Tecnologia, contenuti e immagine devono lavorare insieme:
+            non vivere in tre preventivi che non si parlano.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card" data-accent="yellow">
+            <p class="service-card__number" aria-hidden="true">01</p>
+
+            <h3>Siti web</h3>
+
+            <p>
+              Landing page, siti vetrina e progetti web pensati per raccontare
+              bene chi sei, cosa fai e perché qualcuno dovrebbe contattarti.
+            </p>
+
+            <p class="service-card__tag">
+              Strategia · UX · UI · Sviluppo
+            </p>
+          </article>
+
+          <article class="service-card" data-accent="red">
+            <p class="service-card__number" aria-hidden="true">02</p>
+
+            <h3>PWA</h3>
+
+            <p>
+              Esperienze web installabili e veloci per progetti che hanno
+              bisogno di qualcosa in più di un normale sito, senza partire
+              automaticamente da un'app tradizionale.
+            </p>
+
+            <p class="service-card__tag">
+              Prototipo · Interfaccia · Web App
+            </p>
+          </article>
+
+          <article class="service-card" data-accent="violet">
+            <p class="service-card__number" aria-hidden="true">03</p>
+
+            <h3>Brand design</h3>
+
+            <p>
+              Contenuti pensati insieme al progetto digitale:
+              logo, immagini, video e testi con un linguaggio coerente
+              con ciò che il sito deve comunicare.
+            </p>
+
+            <p class="service-card__tag">
+              Asset digitali · Contenuti · Racconto
+            </p>
+          </article>
+
+          <article class="service-card" data-accent="yellow">
+            <p class="service-card__number" aria-hidden="true">04</p>
+
+            <h3>Evoluzione</h3>
+
+            <p>
+              Un sito non deve diventare un reperto archeologico appena
+              pubblicato. Posso seguirne aggiornamenti, miglioramenti
+              e nuove funzionalità quando servono.
+            </p>
+
+            <p class="service-card__tag">
+              Supporto · Ottimizzazione · Crescita
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section independent" id="independent">
+      <div class="container">
+        <div class="content-grid independent__grid">
+          <div class="independent__intro stack">
+            <p class="eyebrow">Perché indipendente</p>
+
+            <h2 class="text-balance">
+              Una persona.
+              <span class="independent__highlight">Meno ping-pong.</span>
+            </h2>
+
+            <p>
+              Parli direttamente con chi ascolta il problema, pensa
+              l'interfaccia, sviluppa la soluzione e segue il progetto.
+              Le informazioni fanno meno strada e le decisioni possono
+              essere più semplici.
+            </p>
+
+            <p>
+              Una struttura snella significa inoltre meno livelli
+              organizzativi da sostenere: più spazio nel preventivo
+              per il lavoro che finisce davvero nel tuo progetto.
+            </p>
+
+            <a class="button button--dark" href="#contact">
+              Vediamo se siamo compatibili
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card">
+              <span class="benefit-card__mark" aria-hidden="true">→</span>
+              <h3>Parli con chi fa</h3>
+              <p>
+                Niente telefono senza fili tra commerciale, project manager,
+                designer e sviluppatore.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <span class="benefit-card__mark" aria-hidden="true">↗</span>
+              <h3>Struttura leggera</h3>
+              <p>
+                Un'organizzazione più semplice può evitare costi e passaggi
+                che nei progetti piccoli spesso aggiungono poco valore.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <span class="benefit-card__mark" aria-hidden="true">◎</span>
+              <h3>Visione coerente</h3>
+              <p>
+                Design, sviluppo e contenuto vengono affrontati come parti
+                dello stesso prodotto, non come compartimenti separati.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <span class="benefit-card__mark" aria-hidden="true">!</span>
+              <h3>Limiti chiari</h3>
+              <p>
+                Se un progetto richiede competenze o una struttura fuori
+                perimetro, meglio dirlo subito e decidere insieme come procedere.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="name-story">
+          <p class="name-story__label">
+            A proposito del nome…
+          </p>
+
+          <p class="name-story__text">
+            “The Independent Pixel” strizza l'occhio ai
+            <strong>density-independent pixel</strong> di Android:
+            un'unità pensata per adattarsi a schermi diversi.
+            Indipendente per definizione, adattabile per vocazione.
+            Mi sembrava un nome abbastanza appropriato!
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container stack">
+        <div class="section-heading content-grid">
+          <div class="section-heading__intro">
+            <p class="eyebrow">Il workflow di lavoro</p>
+
+            <h2 class="text-balance">
+              Poche cerimonie.
+              Un processo comprensibile.
+            </h2>
+          </div>
+
+          <p class="section-heading__copy">
+            Il metodo deve aiutare a prendere decisioni, non diventare
+            un progetto dentro al progetto.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <p class="process-step__number">01</p>
+            <h3>Capire</h3>
+            <p>
+              Obiettivi, pubblico, priorità, materiali disponibili e cose
+              che vuoi assolutamente evitare.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <p class="process-step__number">02</p>
+            <h3>Impostare</h3>
+            <p>
+              Si definiscono struttura, contenuti, esperienza e soluzione
+              tecnica prima di moltiplicare le ore di sviluppo.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <p class="process-step__number">03</p>
+            <h3>Costruire</h3>
+            <p>
+              Il progetto prende forma con revisioni concrete e decisioni
+              condivise, mantenendo attenzione a prestazioni e accessibilità.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <p class="process-step__number">04</p>
+            <h3>Pubblicare</h3>
+            <p>
+              Controlli finali, messa online e una base abbastanza ordinata
+              da poter continuare a evolvere senza drammi.
+            </p>
+          </article>
+        </div>
+
+        <div class="process-cta">
+          <p>
+            Hai già un brief perfetto? Ottimo!
+            Hai tre appunti sparsi e un'idea difficile da spiegare?
+            Va benissimo anche quello.
+          </p>
+
+          <a class="text-link" href="#contact">
+            Partiamo da lì
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="content-grid contact__grid">
+          <div class="contact__intro stack">
+            <p class="eyebrow">Facciamo due chiacchiere</p>
+
+            <h2 class="text-balance">
+              Hai un progetto in testa?
+              Portalo fuori dalla testa!
+            </h2>
+
+            <p>
+              Raccontami cosa vuoi costruire, migliorare o finalmente
+              pubblicare. Non serve conoscere la soluzione tecnica:
+              quella possiamo trovarla insieme.
+            </p>
+
+            <div class="contact-note">
+              <strong>Puoi partire anche da poco.</strong>
+              <p>
+                Un obiettivo, quello che hai già e il problema che vuoi
+                risolvere sono più utili di una richiesta piena di termini
+                tecnici.
+              </p>
+            </div>
+
+            <div class="contact-direct">
+              <p>
+                Preferisci scrivermi direttamente?
+              </p>
+              <p>
+                Email: <strong>inpixel.studio@gmail.com</strong>
+              </p>
+              <p>
+                Telefono: <strong>+39 333 91 519 34</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact__form-wrap">
+            <form
+              class="contact-form"
+              method="post"
+              data-contact-form
+            >
+              <fieldset class="contact-form__fieldset">
+                <legend>
+                  Raccontami il progetto
+                </legend>
+
+                <div class="field" data-field>
+                  <label for="name">
+                    Come ti chiami?
+                  </label>
+
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    minlength="2"
+                    required
+                    data-validate
+                    aria-describedby="name-help name-error"
+                  >
+
+                  <p class="field-help" id="name-help">
+                    Basta il nome con cui preferisci essere chiamato.
+                  </p>
+
+                  <p
+                    class="field-error"
+                    id="name-error"
+                    data-field-error
+                    aria-live="polite"
+                  ></p>
+                </div>
+
+                <div class="field" data-field>
+                  <label for="email">
+                    La tua email
+                  </label>
+
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    data-validate
+                    aria-describedby="email-help email-error"
+                  >
+
+                  <p class="field-help" id="email-help">
+                    Serve per risponderti in merito a questa richiesta.
+                  </p>
+
+                  <p
+                    class="field-error"
+                    id="email-error"
+                    data-field-error
+                    aria-live="polite"
+                  ></p>
+                </div>
+
+                <div class="field" data-field>
+                  <label for="service">
+                    Di cosa parliamo?
+                  </label>
+
+                  <select
+                    id="service"
+                    name="service"
+                    required
+                    data-validate
+                    aria-describedby="service-error"
+                  >
+                    <option value="">
+                      Scegli una voce
+                    </option>
+                    <option value="website">
+                      Sito web
+                    </option>
+                    <option value="pwa">
+                      Progressive Web App
+                    </option>
+                    <option value="brand-design">
+                      Brand design
+                    </option>
+                    <option value="logo-design">
+                      Logo design
+                    </option>
+                    <option value="photo-video">
+                      Fotografia o video
+                    </option>
+                    <option value="support">
+                      Supporto o miglioramenti
+                    </option>
+                    <option value="other">
+                      Un po' di tutto / non lo so ancora
+                    </option>
+                  </select>
+
+                  <p
+                    class="field-error"
+                    id="service-error"
+                    data-field-error
+                    aria-live="polite"
+                  ></p>
+                </div>
+
+                <div class="field" data-field>
+                  <label for="message">
+                    Cosa hai in mente?
+                  </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="7"
+                    minlength="20"
+                    required
+                    data-validate
+                    aria-describedby="message-help message-error"
+                  ></textarea>
+
+                  <p class="field-help" id="message-help">
+                    Obiettivo, situazione attuale e qualsiasi dettaglio
+                    possa aiutare a capire il progetto.
+                  </p>
+
+                  <p
+                    class="field-error"
+                    id="message-error"
+                    data-field-error
+                    aria-live="polite"
+                  ></p>
+                </div>
+
+                <div class="field field--check" data-field>
+                  <label class="check-field" for="privacy">
+                    <input
+                      id="privacy"
+                      name="privacy"
+                      type="checkbox"
+                      required
+                      data-validate
+                      aria-describedby="privacy-help privacy-error"
+                    >
+
+                    <span>
+                      Confermo di aver letto l'<a href="/privacy-policy.html">informativa privacy</a>.
+                    </span>
+                  </label>
+
+                  <p
+                    class="field-error"
+                    id="privacy-error"
+                    data-field-error
+                    aria-live="polite"
+                  ></p>
+                </div>
+              </fieldset>
+
+              <button class="button contact-form__submit" type="submit">
+                <span data-submit-label>Invia la richiesta</span>
+                <span aria-hidden="true">→</span>
+              </button>
+
+              <p
+                class="form-status"
+                data-form-status
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img
+          class="site-footer__logo"
+          src="logo.jpg"
+          width="1040"
+          height="1040"
+          alt=""
+          loading="lazy"
+        >
+
+        <div>
+          <strong>The Independent Pixel</strong>
+          <p>
+            Sviluppatore digitale indipendente per professionisti e piccole aziende.
+          </p>
+        </div>
+      </div>
+
+      <div class="site-footer__meta">
+        <p>di Simone Grasso</p>
+        <p><a href="/privacy-policy.hmtl">Privacy policy</a></p>
+        <p>
+          © <span data-current-year>2026</span> The Independent Pixel
+        </p>
+      </div>
+
+      <a class="site-footer__top" href="#top">
+        Torna su
+        <span aria-hidden="true">↑</span>
+      </a>
+    </div>
+  </footer>
+</body>
 </html>
