@@ -896,6 +896,7 @@ section[id] {
   block-size: var(--step-up-2);
   object-fit: cover;
   border: 2px solid var(--white);
+  background: var(--white);
 }
 
 .site-footer__meta {
