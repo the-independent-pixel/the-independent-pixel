@@ -1325,7 +1325,7 @@ section[id] {
   font-weight: 750;
   text-decoration-thickness: var(--step-down-4);
   text-decoration-color: var(--black);
-  text-underline-offset: var(--step-down-3);
+  text-underline-offset: var(--step-down-4);
 }
 
 .privacy-nav__list a:hover {
