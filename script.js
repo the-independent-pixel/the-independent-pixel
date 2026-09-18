@@ -189,18 +189,6 @@
     const action = "https://my-lead.inpixel-studio.workers.dev/api/hello";
     const method = (form.getAttribute("method") || "post").toUpperCase();
 
-    /*
-     * Replace [endpoint-form] with the real server endpoint before launch.
-     * Server-side validation remains mandatory.
-     */
-    if (!action || action.includes("[endpoint-form]")) {
-      setFormStatus(
-        "error",
-        "Il modulo è pronto, ma l'invio non è ancora collegato. Configura l'endpoint del form prima della pubblicazione."
-      );
-      return;
-    }
-
     setLoadingState(true);
     setFormStatus(
       "loading",
@@ -228,14 +216,14 @@
 
       setFormStatus(
         "success",
-        "Richiesta inviata. Grazie: ora il progetto non è più soltanto nella tua testa."
+        "Richiesta inviata.<br>Ora il progetto non è più soltanto nella tua testa!"
       );
     } catch (error) {
       console.error("Contact form submission failed:", error);
 
       setFormStatus(
         "error",
-        "Non sono riuscito a inviare la richiesta. Riprova tra poco oppure usa il contatto email indicato nella pagina."
+        "Non sono riuscito a inviare la richiesta.<br> Riprova tra poco oppure usa il contatto email indicato nella pagina."
       );
     } finally {
       setLoadingState(false);
